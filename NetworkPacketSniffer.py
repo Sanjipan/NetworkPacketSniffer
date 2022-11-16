@@ -1,2 +1,2 @@
-import socket
 import sys
+import socket
