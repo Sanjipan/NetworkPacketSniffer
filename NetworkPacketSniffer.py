@@ -14,6 +14,7 @@ DATA_TAB_4 = '\t\t\t\t '
 
 
 def main():
+    Logo()
     conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
 
     while True:
@@ -108,7 +109,8 @@ def tcp_segment(data):
     flag_rst = (offset_reserved_flags & 4) >> 2
     flag_syn = (offset_reserved_flags & 2) >> 1
     flag_fin = offset_reserved_flags & 1
-    return src_port, dest_port, sequence, acknowledgement, flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin, data[offset:]
+    return src_port, dest_port, sequence, acknowledgement, flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin, data[
+                                                                                                                       offset:]
 
 
 # Unpack UDP segment
@@ -125,6 +127,31 @@ def format_multi_line(prefix, string, size=80):
         if size % 2:
             size -= 1
     return '\n'.join([prefix + line for line in textwrap.wrap(string, size)])
+
+
+def Logo():
+    print("______________________________________________________________")
+    print("|                                                            ")
+    print("|             ⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆⠉⠉⢉⣿⣿⣿⣷⣦⣄⡀⠀            ")
+    print("|             ⠀⠚⢛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄            ")
+    print("|             ⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠿⣿⡇            ")
+    print("|             ⢀⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠈⠃             ")
+    print("|             ⠸⠁⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⠀⠹⣿⣿⡇⠈⠻⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⠀⠈⠻⡇⠀⠀⠈⠙⠿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ")
+    print("|  _    _    __          ___  __     ______            _____ ")
+    print("| | |  | |   \ \        / / |/ /    |  ____|          / ____|")
+    print("| | |__| | __ \ \  /\  / /| ' /_____| |__  _   _  ___| (___  ")
+    print("| |  __  |/ _` \ \/  \/ / |  <______|  __|| | | |/ _ \\___ \ ")
+    print("| | |  | | (_| |\  /\  /  | . \     | |___| |_| |  __/____) |")
+    print("| |_|  |_|\__,_| \/  \/   |_|\_\    |______\__, |\___|_____/ ")
+    print("|                                           __/ |            ")
+    print("|                                          |___/             ")
+    print("|============================================================|")
 
 
 main()
