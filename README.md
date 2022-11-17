@@ -42,9 +42,9 @@ ______________________________________________________________
 |                                          |___/             
 |============================================================|
 SNIFFING HAS BEEN STARTED:
-Ethernet Frame: 
-Destination: 36:34:00:00:00:02, Source: 00:0A:23:90:E2:0B, Protocol: 46640
-Data :
+[*] Ethernet Frame: 
+[*] Destination: 36:34:00:00:00:02, Source: 00:0A:23:90:E2:0B, Protocol: 46640
+[*] Data :
          \x30\x0c\xc9\xe7\x00\x08\x2a\xff\xfe\x90\x00\x00\x00\x00\x00\x00\xf8\xfa\x00\x
          3d\x33\xa7\xe1\xbc\xfd\x02\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
          \x02\x85\x00\x6b\x99\x00\x00\x00\x00
