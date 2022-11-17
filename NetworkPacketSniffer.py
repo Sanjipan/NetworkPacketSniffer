@@ -14,8 +14,9 @@ DATA_TAB_4 = '\t\t\t\t '
 
 
 def main():
+    Logo()
     conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
-
+    print("SNIFFING HAS BEEN STARTED:")
     while True:
         raw_data, addr = conn.recvfrom(65536)
         dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
@@ -126,6 +127,31 @@ def format_multi_line(prefix, string, size=80):
         if size % 2:
             size -= 1
     return '\n'.join([prefix + line for line in textwrap.wrap(string, size)])
+
+
+def Logo():
+    print("______________________________________________________________")
+    print("|                                                            ")
+    print("|             ⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆⠉⠉⢉⣿⣿⣿⣷⣦⣄⡀⠀            ")
+    print("|             ⠀⠚⢛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄            ")
+    print("|             ⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠿⣿⡇            ")
+    print("|             ⢀⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠈⠃             ")
+    print("|             ⠸⠁⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ")
+    print("|             ⠀⠀⠀⠹⣿⣿⡇⠈⠻⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              ")
+    print("|             ⠀⠀⠀⠀⠈⠻⡇⠀⠀⠈⠙⠿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ")
+    print("|  _    _    __          ___  __     ______            _____ ")
+    print("| | |  | |   \ \        / / |/ /    |  ____|          / ____|")
+    print("| | |__| | __ \ \  /\  / /| ' /_____| |__  _   _  ___| (___  ")
+    print("| |  __  |/ _` \ \/  \/ / |  <______|  __|| | | |/ _ \\___ \ ")
+    print("| | |  | | (_| |\  /\  /  | . \     | |___| |_| |  __/____) |")
+    print("| |_|  |_|\__,_| \/  \/   |_|\_\    |______\__, |\___|_____/ ")
+    print("|                                           __/ |            ")
+    print("|                                          |___/             ")
+    print("|============================================================|")
 
 
 main()
