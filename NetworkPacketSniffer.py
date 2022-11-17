@@ -4,7 +4,13 @@ import textwrap
 
 
 def main():
-    conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
+    conn = socket.socket(socket.AF_PACKET , socket.SOCK_RAW, socket.ntohs(3))
+
+    while True:
+        raw_data, addr = conn.recvfrom(65536)
+        dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
+        print("\nEthernet Frame: ")
+        print("Destination: {}, Source: {}, Protocol: {}".format(dest_mac, src_mac, eth_proto))
 
 # Unpack ethernet frame
 def ethernet_frame(data):
@@ -12,7 +18,7 @@ def ethernet_frame(data):
     return get_mac_addr(dest_mac), get_mac_addr(src_mac), socket.htons(proto), data[14:]
 
 
-# Return Properly The Mac Address(ie: AA;BB;CC;DD;EE;FF)
+# Return Properly The Mac Address(ie: AA:BB:CC:DD:EE:FF)
 def get_mac_addr(byte_addr):
     byte_str = map('{:02x}'.format, byte_addr)
     mac_addr = ':'.join(byte_str).upper()
