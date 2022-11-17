@@ -18,4 +18,3 @@ def get_mac_addr(byte_addr):
     byte_str = map('{:02x}'.format, byte_addr)
     mac_addr = ':'.join(byte_str).upper()
     return mac_addr
-
