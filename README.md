@@ -2,6 +2,8 @@
 # NETWORK PACKET SNIFFER
 
 ***A network packet sniffer made in python.***
+######
+*This tool monitors network traffic for devices, protocols, and various information captured in different packets.*
 
 ## How To use?
 To use the code:
