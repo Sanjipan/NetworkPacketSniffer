@@ -1,0 +1,109 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a63d8067-8dd5-424a-a3b8-a0c169b3b619\" name=\"Changes\" comment=\"Initial Commit\">\r\n      <change beforePath=\"$PROJECT_DIR$/NetworkPacketSniffer.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/NetworkPacketSniffer.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HdYfPZATlLlaEcY6Oyox23If1v\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a63d8067-8dd5-424a-a3b8-a0c169b3b619\" name=\"Changes\" comment=\"\" />\r\n      <created>1668616532116</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1668616532116</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial Commit\">\r\n      <created>1668660533273</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668660533273</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial Commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial Commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7f1ac3f7ec12177deb6e867f04a016227cbc054e)
++++ b/.idea/workspace.xml	(date 1668661815325)
+@@ -2,6 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="a63d8067-8dd5-424a-a3b8-a0c169b3b619" name="Changes" comment="Initial Commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/NetworkPacketSniffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkPacketSniffer.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -26,6 +27,34 @@
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RunManager">
++    <configuration name="NetworkPacketSniffer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="NetworkPacketSniffer" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NetworkPacketSniffer.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python.NetworkPacketSniffer" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -42,7 +71,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1668660533273</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Initial Commit">
++      <created>1668660665185</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1668660665185</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+Index: NetworkPacketSniffer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import socket\r\nimport struct\r\nimport textwrap\r\n\r\n\r\ndef main():\r\n    conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))\r\n    print(\"\")\r\n\r\n# Unpack ethernet frame\r\ndef ethernet_frame(data):\r\n    dest_mac, src_mac, proto = struct.unpack('! 6s 6s H', data[:14])\r\n    return get_mac_addr(dest_mac), get_mac_addr(src_mac), socket.htons(proto), data[14:]\r\n\r\n\r\n# Return Properly The Mac Address(ie: AA;BB;CC;DD;EE;FF)\r\ndef get_mac_addr(byte_addr):\r\n    byte_str = map('{:02x}'.format, byte_addr)\r\n    mac_addr = ':'.join(byte_str).upper()\r\n    return mac_addr\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/NetworkPacketSniffer.py b/NetworkPacketSniffer.py
+--- a/NetworkPacketSniffer.py	(revision 7f1ac3f7ec12177deb6e867f04a016227cbc054e)
++++ b/NetworkPacketSniffer.py	(date 1668662934510)
+@@ -4,8 +4,14 @@
+ 
+ 
+ def main():
+-    conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
+-    print("")
++    conn = socket.socket(socket.AF_PACKET , socket.SOCK_RAW, socket.ntohs(3))
++
++    while True:
++        raw_data, addr = conn.recvfrom(65536)
++        dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
++        print("\nEthernet Frame: ")
++        print("Destination: {}, Source: {}, Protocol: {}".format(dest_mac, src_mac, eth_proto))
++
+ 
+ # Unpack ethernet frame
+ def ethernet_frame(data):
+@@ -13,8 +19,11 @@
+     return get_mac_addr(dest_mac), get_mac_addr(src_mac), socket.htons(proto), data[14:]
+ 
+ 
+-# Return Properly The Mac Address(ie: AA;BB;CC;DD;EE;FF)
++# Return Properly The Mac Address(ie: AA:BB:CC:DD:EE:FF)
+ def get_mac_addr(byte_addr):
+     byte_str = map('{:02x}'.format, byte_addr)
+     mac_addr = ':'.join(byte_str).upper()
+     return mac_addr
++
++
++
