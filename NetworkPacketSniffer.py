@@ -4,8 +4,7 @@ import textwrap
 
 
 def main():
-    conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
-
+    conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
 
 # Unpack ethernet frame
 def ethernet_frame(data):
