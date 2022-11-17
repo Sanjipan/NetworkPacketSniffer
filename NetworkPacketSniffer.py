@@ -12,7 +12,6 @@ def main():
         print("\nEthernet Frame: ")
         print("Destination: {}, Source: {}, Protocol: {}".format(dest_mac, src_mac, eth_proto))
 
-
 # Unpack ethernet frame
 def ethernet_frame(data):
     dest_mac, src_mac, proto = struct.unpack('! 6s 6s H', data[:14])
@@ -24,8 +23,6 @@ def get_mac_addr(byte_addr):
     byte_str = map('{:02x}'.format, byte_addr)
     mac_addr = ':'.join(byte_str).upper()
     return mac_addr
-
-
 
 
 # Unpack IPv4 packet
