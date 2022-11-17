@@ -1,0 +1,45 @@
+Index: NetworkPacketSniffer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import socket\r\nimport struct\r\nimport textwrap\r\n\r\n\r\ndef main():\r\n    conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))\r\n    print(\"\")\r\n\r\n# Unpack ethernet frame\r\ndef ethernet_frame(data):\r\n    dest_mac, src_mac, proto = struct.unpack('! 6s 6s H', data[:14])\r\n    return get_mac_addr(dest_mac), get_mac_addr(src_mac), socket.htons(proto), data[14:]\r\n\r\n\r\n# Return Properly The Mac Address(ie: AA;BB;CC;DD;EE;FF)\r\ndef get_mac_addr(byte_addr):\r\n    byte_str = map('{:02x}'.format, byte_addr)\r\n    mac_addr = ':'.join(byte_str).upper()\r\n    return mac_addr\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/NetworkPacketSniffer.py b/NetworkPacketSniffer.py
+--- a/NetworkPacketSniffer.py	(revision 840d039f52c856edd0139e4074135d29885445fc)
++++ b/NetworkPacketSniffer.py	(date 1668660772504)
+@@ -5,7 +5,7 @@
+ 
+ def main():
+     conn=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
+-    print("")
++
+ 
+ # Unpack ethernet frame
+ def ethernet_frame(data):
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a63d8067-8dd5-424a-a3b8-a0c169b3b619\" name=\"Changes\" comment=\"Initial Commit\">\r\n      <change beforePath=\"$PROJECT_DIR$/NetworkPacketSniffer.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/NetworkPacketSniffer.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HdYfPZATlLlaEcY6Oyox23If1v\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a63d8067-8dd5-424a-a3b8-a0c169b3b619\" name=\"Changes\" comment=\"\" />\r\n      <created>1668616532116</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1668616532116</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial Commit\">\r\n      <created>1668660533273</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668660533273</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial Commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial Commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 840d039f52c856edd0139e4074135d29885445fc)
++++ b/.idea/workspace.xml	(date 1668660995107)
+@@ -42,7 +42,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1668660533273</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Initial Commit">
++      <created>1668660665185</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1668660665185</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
