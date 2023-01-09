@@ -14,7 +14,7 @@ $ sudo python3 ./NetworkPacketSniffer.py
 ```
     
 ## Demo:
-```console
+```bash
 ┌──(kali㉿kali)-[~/]
 └─$ cd NetworkPacketSniffer
 ┌──(kali㉿kali)-[~/NetworkPacketSniffer]
