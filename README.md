@@ -7,14 +7,14 @@
 
 ## How To use?
 To use the code:
-```bash
+```console
 $ git clone https://github.com/Sanjipan/NetworkPacketSniffer
 $ cd NetworkPacketSniffer
 $ sudo python3 ./NetworkPacketSniffer.py
 ```
     
 ## Demo:
-```bash
+```console
 ┌──(kali㉿kali)-[~/]
 └─$ cd NetworkPacketSniffer
 ┌──(kali㉿kali)-[~/NetworkPacketSniffer]
@@ -53,7 +53,7 @@ SNIFFING HAS BEEN STARTED:
 ### **Terminate the program:**
 
 Use this Key-Combination in the terminal to terminate the program:
-```bash
+```console
   Ctrl+c
 ```
 
